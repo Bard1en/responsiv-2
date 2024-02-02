@@ -1,25 +1,14 @@
-body{
-    background-color:lightskyblue;
-    margin:0;
-}
-section{
+
+div{
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 50vh;
+    width: 100vh;
     margin: 0 auto;
-    background-color:yellow;
-    border-radius:50%;
-    width:50vw;
-    height: 100vh;
 }
-@media (max-width : 320px) 
-{
-    section{padding: 50%;}
+section:nth-child(2){
+    background-color: yellow;
+    border-radius: 50%;
 }
 
-@media (min-width : 321px) and (max-width : 800px)
-{
-    section{padding: 25%;}
-}
-
-@media (min-width: 801px)
-{
-    section{padding: 12.5%;}
-}
